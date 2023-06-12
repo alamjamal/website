@@ -72,7 +72,7 @@ body {
 }
 
 .footer-third {
-  width: 100%; /* Set width to 100% for full width on small screens */
+  width: 100%; 
   max-width: 400px; /* Add a max-width to limit width on larger screens */
   margin: auto;
   margin-top: 20px; /* Adjust margin for spacing */
