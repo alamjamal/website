@@ -1,0 +1,23 @@
+.school-details {
+  background-color: aqua;
+  background: linear-gradient(to top, rgb(238, 243, 253) 50%, white 50%);
+}
+
+.details-box {
+  background-color: white;
+}
+
+.details-image {
+  background-color: rgb(248, 198, 173);
+}
+
+
+.details-box:nth-child(2) .details-image {
+  background-color: rgb(149, 195, 222);
+}
+
+.details-box:nth-child(3) .details-image {
+  background-color: rgb(144, 215, 180);
+}
+
+

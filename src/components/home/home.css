@@ -1,0 +1,20 @@
+.carousel{
+    margin-top: 150px;
+}
+
+
+@media (max-width: 600px) {
+    /* Your styles for small screens (sm) */
+
+    .carousel{
+        margin-top: 220px;
+    }
+    
+  }
+
+  @media (max-width: 960px) {
+    /* Your styles for medium screens (md) */
+    .carousel{
+        margin-top: 220px;
+    }
+  }

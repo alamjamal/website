@@ -1,20 +1,30 @@
-import Navbar from "./components/Navbar";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import Home from "./components/home/Home";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <main>
-        <h1>ggag</h1>
-        <h1>ggag</h1>
-
-        <h1>ggag</h1>
-        <h1>ggag</h1>
-        <h1>ggag</h1>
-      </main>
+    <>
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route exact path="/" element={<Home />}></Route>
+          {/* <Route exact path="/Edeeksham" element={<Edeeksham />}></Route>
+          <Route exact path="/Manuu" element={<Manuu />}></Route>
+           <Route exact path="/Team" element={<Team />}></Route> 
+          <Route exact path="/Team" element={<Team />}></Route>
+          <Route exact path="/Expert" element={<Expert />}></Route>
+          <Route exact path="/Workshop" element={<Workshop />}></Route>
+          <Route exact path="/Training" element={<Training />}></Route>
+          <Route exact path="/Contact" element={<Contact />}></Route>
+          <Route exact path="/Insight" element={<Insight />}></Route>
+          <Route exact path="/Faq" element={<Faqs />}></Route> */}
+        </Routes>
+      </Router>
       <Footer />
-    </div>
+    </>
   );
 }
 
