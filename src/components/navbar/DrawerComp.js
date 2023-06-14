@@ -6,12 +6,12 @@ import {
   Grid,
   IconButton,
   List,
-  ListItem,
   ListItemButton,
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-router-dom";
 
 function DrawerComp() {
   const [open, setOpen] = useState(false);
@@ -26,27 +26,27 @@ function DrawerComp() {
               <ListItemText sx={{color:'white'}}>About</ListItemText>
             </ListItemIcon>
           </ListItemButton>
-          <ListItemButton>
+          <ListItemButton onClick={()=>setOpen(false)} component={Link} to='/Workshop'> 
             <ListItemIcon>
               <ListItemText sx={{color:'white'}}>Workshop</ListItemText>
             </ListItemIcon>
           </ListItemButton>
-          <ListItemButton>
+          <ListItemButton onClick={()=>setOpen(false)} component={Link} to='/Training'>
             <ListItemIcon>
               <ListItemText sx={{color:'white'}}>Training</ListItemText>
             </ListItemIcon>
           </ListItemButton>
-          <ListItemButton>
+          <ListItemButton onClick={()=>setOpen(false)} component={Link} to='/Contact'>
             <ListItemIcon>
               <ListItemText sx={{color:'white'}}>Contact Us</ListItemText>
             </ListItemIcon>
           </ListItemButton>
-          <ListItemButton>
+          <ListItemButton onClick={()=>setOpen(false)} component={Link} to='/Insight'>
             <ListItemIcon>
               <ListItemText sx={{color:'white'}}>Insight</ListItemText>
             </ListItemIcon>
           </ListItemButton>
-          <ListItemButton divider>
+          <ListItemButton onClick={()=>setOpen(false)} component={Link} to='/Faq' divider>
             <ListItemIcon>
               <ListItemText sx={{color:'white'}}>FAQs</ListItemText>
             </ListItemIcon>

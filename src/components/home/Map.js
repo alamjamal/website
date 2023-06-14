@@ -28,23 +28,23 @@ function Map() {
       };
     }
   
-    function del() {
-      var x = document.getElementsByClassName('demo');
-      x[0].style.width = '0px';
-      x[0].style.height = '0px';
-      x[0].style.zIndex = '-1';
-      x[0].style.transition = 'all 0.6s ease-in-out';
+    // function del() {
+    //   var x = document.getElementsByClassName('demo');
+    //   x[0].style.width = '0px';
+    //   x[0].style.height = '0px';
+    //   x[0].style.zIndex = '-1';
+    //   x[0].style.transition = 'all 0.6s ease-in-out';
   
-      let dele = document.getElementById('delete');
-      dele.style.width = '0px';
-      dele.style.height = '0px';
-      dele.style.transition = 'all 0.6s ease-in-out';
+    //   let dele = document.getElementById('delete');
+    //   dele.style.width = '0px';
+    //   dele.style.height = '0px';
+    //   dele.style.transition = 'all 0.6s ease-in-out';
   
-      var mapimage = document.getElementsByClassName('map-image');
-      mapimage[0].style.width = '0px';
-      mapimage[0].style.height = '0px';
-      mapimage[0].style.transition = 'all 0.6s ease-in-out';
-    }
+    //   var mapimage = document.getElementsByClassName('map-image');
+    //   mapimage[0].style.width = '0px';
+    //   mapimage[0].style.height = '0px';
+    //   mapimage[0].style.transition = 'all 0.6s ease-in-out';
+    // }
   return (
     <div className="map-section" >
       <div className="map-section-div">

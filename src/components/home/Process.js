@@ -6,7 +6,7 @@ function Process() {
     <div className="process-section">
       <div className="process-image">
         <div className="process-section-img">
-          <img src={processImage} alt="process-image" />
+          <img src={processImage} alt="processimage" />
         </div>
         <div className="box-background" />
       </div>

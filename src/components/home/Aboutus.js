@@ -46,7 +46,7 @@ function Aboutus() {
       </div>
       <div className="about-us-image">
         <div className="about-us-img">
-          <img src={aboutUsPhoto} alt="about-us-photo" />
+          <img src={aboutUsPhoto} alt="about-usphoto" />
         </div>
         <div className="box-background" />
       </div>

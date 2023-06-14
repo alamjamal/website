@@ -13,7 +13,7 @@ function PeopleSay() {
       <div className="quotes-box-row">
         <div className="quotes-box">
           <div className="bg-image">
-            <img src={quotesImage} alt="quotes image" />
+            <img src={quotesImage} alt="quotesimage" />
           </div>
           <p>
             Excited to see the system being developed, and I would definitely
@@ -25,7 +25,7 @@ function PeopleSay() {
         </div>
         <div className="quotes-box">
           <div className="bg-image">
-            <img src={quotesImage} alt="quotes image" />
+            <img src={quotesImage} alt="quotes image1" />
           </div>
           <p>
             My well wishes to the team, and we will collaborate for future
@@ -37,7 +37,7 @@ function PeopleSay() {
         </div>
         <div className="quotes-box">
           <div className="bg-image">
-            <img src={quotesImage} alt="quotes image" />
+            <img src={quotesImage} alt="quotes image3" />
           </div>
           <p>
             My team and I are excited to be a part of this project, and we wish

@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css"; // Import your CSS file
 import eDeekshamLogo from "../../assets/images/edeeksham_logo_new-removebg-preview.png";
-import FacebookIcon from '@mui/icons-material/Facebook';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from "@mui/icons-material/Facebook";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import TwitterIcon from "@mui/icons-material/Twitter";
 function Footer() {
   return (
     <div>
@@ -58,17 +58,16 @@ function Footer() {
           </div>
           <div className="footer-fourth">
             <h3>Follow Us</h3>
-           < FacebookIcon />
-           < TwitterIcon />
-           < YouTubeIcon />
-        
+            <FacebookIcon />
+            <TwitterIcon />
+            <YouTubeIcon />
           </div>
         </div>
         <div className="footer-lower">
           <div>
             <p>
-              © <span style={{ fontSize: 20 }}>ε</span>-Deekshaam 2023. All
-              rights reserved
+              © <span style={{ fontSize: 20 }}>ε</span>
+              -Deekshaam 2023. All rights reserved
             </p>
           </div>
           <div style={{ textAlign: "end" }}>

@@ -8,7 +8,6 @@ import {
   Tab,
   Tabs,
   Toolbar,
-  Typography,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
@@ -88,7 +87,12 @@ function Navbar() {
               {" "}
               <Grid item xs={2}>
                 <Link to="/">
-                  <Button variant="text" sx={{color:"white",fontSize:'large'}}>HOME</Button>
+                  <Button
+                    variant="text"
+                    sx={{ color: "white", fontSize: "large" }}
+                  >
+                    HOME
+                  </Button>
                 </Link>
               </Grid>
               <DrawerComp />
@@ -96,27 +100,35 @@ function Navbar() {
           ) : (
             <Grid sx={{ placeItems: "center" }} container>
               <Grid item xs={2}>
-              <Link to="/">
-                  <Button variant="text" sx={{color:"white",fontSize:'large'}}>HOME</Button>
+                <Link to="/">
+                  <Button
+                    variant="text"
+                    sx={{ color: "white", fontSize: "large" }}
+                  >
+                    HOME
+                  </Button>
                 </Link>
               </Grid>
 
               <Grid item xs={6}>
                 <Tabs
-                  indicatorColor="secondary"
-                  textColor="inherit"
+                  textColor="none"
                   value={value}
                   onChange={(e, val) => setValue(val)}
+                  TabIndicatorProps={{
+                    style: { display: "none" },
+                  }}
                 >
-          
-          
-          <Tab label="About" onClick={handleAboutMenuOpen}
-                    onMouseLeave={handleAboutMenuClose}/>
-                  <Tab label="Workshop" />
-                  <Tab label="Training" />
-                  <Tab label="Contact Us" />
-                  <Tab label="Insight" />
-                  <Tab label="FAQs" />
+                  <Tab
+                    label="About"
+                    onClick={handleAboutMenuOpen}
+                    onMouseLeave={handleAboutMenuClose}
+                  />
+                  <Tab label="Workshop" component={Link} to="/Workshop" />
+                  <Tab label="Training" component={Link} to="/Training" />
+                  <Tab label="Contact Us" component={Link} to="/Contact" />
+                  <Tab label="Insight" component={Link} to="/Insight" />
+                  <Tab label="FAQs" component={Link} to="/Faq" />
                 </Tabs>
                 <Menu
                   anchorEl={anchorEl}
@@ -129,23 +141,39 @@ function Navbar() {
                     horizontal: 380,
                   }}
                   transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'center',
+                    vertical: "top",
+                    horizontal: "center",
                   }}
-                  autoFocus='true'
-                 sx={{height:'300px', width:'200px'}}
+                  autoFocus="true"
+                  sx={{ height: "300px", width: "200px" }}
                 >
-                  <MenuItem onClick={handleAboutMenuClose} component={Link} to="/Edeeksham">
-                  E-Deeksham
+                  <MenuItem
+                    onClick={handleAboutMenuClose}
+                    component={Link}
+                    to="/Edeeksham"
+                  >
+                    E-Deeksham
                   </MenuItem>
-                  <MenuItem onClick={handleAboutMenuClose} component={Link} to="/Manuu">
-                  MANUU
+                  <MenuItem
+                    onClick={handleAboutMenuClose}
+                    component={Link}
+                    to="/Manuu"
+                  >
+                    MANUU
                   </MenuItem>
-                  <MenuItem onClick={handleAboutMenuClose} component={Link} to="/Team">
-                  Our Team
+                  <MenuItem
+                    onClick={handleAboutMenuClose}
+                    component={Link}
+                    to="/Team"
+                  >
+                    Our Team
                   </MenuItem>
-                  <MenuItem onClick={handleAboutMenuClose} component={Link} to="/Expert">
-                  Experts
+                  <MenuItem
+                    onClick={handleAboutMenuClose}
+                    component={Link}
+                    to="/Expert"
+                  >
+                    Experts
                   </MenuItem>
                 </Menu>
               </Grid>
