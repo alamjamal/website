@@ -25,15 +25,6 @@ function Navbar() {
 
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-  const [anchorEl, setAnchorEl] = useState(null);
-
-  const handleAboutMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleAboutMenuClose = () => {
-    setAnchorEl(null);
-  };
 
   console.log(isMatch);
   return (
@@ -45,21 +36,30 @@ function Navbar() {
               <img
                 src={ministrylogo}
                 alt="ministry-logo"
-                width="180px"
-                height="80px"
+                width="140px"
+                height="60px"
               />
             </div>
             <div className="logo-photo">
               <img
                 src={edeekshamlogo}
                 alt="edeekshaam-logo"
-                width="130px"
-                height="80px"
+                width="110px"
+                height="60px"
               />
             </div>
+           {isMatch &&<div className="logo-photo">
+              <img
+                src={manuulogo}
+                alt="manuu-logo"
+                width="60px"
+                height="60px"
+              />
+            </div>}
             {isMatch ? (
               ""
             ) : (
+              <>
               <div className="head-title">
                 <div>
                   <h1>
@@ -68,10 +68,8 @@ function Navbar() {
                   </h1>
                 </div>
               </div>
-            )}
-          </div>
-          <div className="right-div">
-            <div className="logo-photo">
+               <div className="right-div">
+               <div className="logo-photo">
               <img
                 src={manuulogo}
                 alt="manuu-logo"
@@ -79,7 +77,11 @@ function Navbar() {
                 height="80px"
               />
             </div>
+               </div>
+               </>
+            )}
           </div>
+         
         </div>
         <Toolbar sx={{ backgroundColor: "#0A2463" }}>
           {isMatch ? (
@@ -110,7 +112,20 @@ function Navbar() {
                 </Link>
               </Grid>
 
+
+              <Grid item xs={1}>
+              <div className="dropdown">
+							<button className="dropdown-btn">About</button>
+							<div className={`dropdown-options`}>
+								<Link to="/Edeeksham">E-Deeksham</Link>
+								<Link to="/Manuu">MANUU</Link>
+								<Link to="/Team">Our Team</Link>
+								<Link to="/Expert">Experts</Link>
+							</div>
+						</div>
+              </Grid>
               <Grid item xs={6}>
+              
                 <Tabs
                   textColor="none"
                   value={value}
@@ -119,63 +134,13 @@ function Navbar() {
                     style: { display: "none" },
                   }}
                 >
-                  <Tab
-                    label="About"
-                    onClick={handleAboutMenuOpen}
-                    onMouseLeave={handleAboutMenuClose}
-                  />
+                  
                   <Tab label="Workshop" component={Link} to="/Workshop" />
                   <Tab label="Training" component={Link} to="/Training" />
                   <Tab label="Contact Us" component={Link} to="/Contact" />
                   <Tab label="Insight" component={Link} to="/Insight" />
                   <Tab label="FAQs" component={Link} to="/Faq" />
                 </Tabs>
-                <Menu
-                  anchorEl={anchorEl}
-                  open={Boolean(anchorEl)}
-                  onClose={handleAboutMenuClose}
-                  onMouseEnter={handleAboutMenuOpen}
-                  onMouseOLeave={handleAboutMenuClose}
-                  anchorOrigin={{
-                    vertical: 200,
-                    horizontal: 380,
-                  }}
-                  transformOrigin={{
-                    vertical: "top",
-                    horizontal: "center",
-                  }}
-                  autoFocus="true"
-                  sx={{ height: "300px", width: "200px" }}
-                >
-                  <MenuItem
-                    onClick={handleAboutMenuClose}
-                    component={Link}
-                    to="/Edeeksham"
-                  >
-                    E-Deeksham
-                  </MenuItem>
-                  <MenuItem
-                    onClick={handleAboutMenuClose}
-                    component={Link}
-                    to="/Manuu"
-                  >
-                    MANUU
-                  </MenuItem>
-                  <MenuItem
-                    onClick={handleAboutMenuClose}
-                    component={Link}
-                    to="/Team"
-                  >
-                    Our Team
-                  </MenuItem>
-                  <MenuItem
-                    onClick={handleAboutMenuClose}
-                    component={Link}
-                    to="/Expert"
-                  >
-                    Experts
-                  </MenuItem>
-                </Menu>
               </Grid>
               <Grid item xs={1} />
               <Grid item xs={2}>

@@ -177,6 +177,9 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className={classes.feature}>
+        <img src={features} style={{ maxWidth: "100%" }} alt="featureImage" />
+      </div>
       {/* ======================================================= School details Section End ====================================================== */}
       {/* ======================================================= Feature Section start ====================================================== */}
       {/* <div className="feature">

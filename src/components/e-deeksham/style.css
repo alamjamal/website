@@ -1,0 +1,158 @@
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.img-div {
+  width: 100%;
+}
+
+.img-about {
+  width: 100%;
+  height: 244px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: white;
+}
+
+.about-eDeeksham {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.content-part {
+  width: 100%;
+  padding: 40px;
+}
+.content-part h1 {
+  margin-bottom: 15px;
+}
+
+.content-part h2 {
+  color: #002868;
+  font-weight: 700;
+}
+
+.content-part p {
+  line-height: 35px;
+  word-spacing: 5px;
+  text-align: justify;
+}
+
+.img-part {
+  width: 100%;
+  padding: 40px;
+  padding-top: 83px;
+}
+
+.about-img {
+  position: relative;
+  z-index: 2;
+}
+
+.img1 {
+  width: 100%;
+  height: auto;
+  max-width: 490px;
+  border-radius: 25px;
+  margin-left: 235px;
+}
+
+.vision-mission {
+  width: 100%;
+  padding-top: 100px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-edeeksham {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 40px;
+}
+
+.mission {
+  flex: 1 1 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.vision {
+  flex: 1 1 100%;
+  background-color: #b0c4f4;
+  padding: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.mission-cont p {
+  text-align: justify;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.img-vision,
+.img-mission {
+  display: flex;
+  height: 75px;
+  width: 80px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .content-part {
+    width: 50%;
+  }
+
+  .img-part {
+    width: 50%;
+  }
+
+  .mission,
+  .vision {
+    flex: 1 1 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about-eDeeksham {
+    padding: 20px;
+  }
+
+  .content-part {
+    padding: 20px;
+  }
+
+  .img-part {
+    padding: 20px;
+    padding-top: 43px;
+  }
+
+  .img1 {
+    margin-left: 0;
+  }
+
+  .box-edeeksham {
+    margin-top: -55px;
+    margin-left: 120px;
+  }
+  .row-edeeksham {
+    display: flex;
+    width: 100%;
+    padding: 40px;
+  }
+}

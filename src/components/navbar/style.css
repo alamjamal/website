@@ -20,6 +20,7 @@
   .right-div {
     display: flex;
     align-items: center;
+    margin-left: 120px;
   }
   
   .logo-photo {
@@ -29,7 +30,9 @@
   @media screen and (max-width: 768px) {
     .left-div {
       width: 100%;
-      justify-content: center;
+      justify-content: start;
+      padding: 10px;
+      margin: 10px;
     }
     
     .right-div {
@@ -43,16 +46,16 @@
     width: 90%;
     margin-top: 20px;
     color: rgb(98, 30, 4);
-    font-weight: bold;
+    font-weight: 500px;
     font-size: 1vw;
-    margin-left: 10px;
+    margin-left: 40px;
   }
 
 
 
 
   .dropdown {
-    width: 90px;
+    width: 100px;
     border-radius: 5px;
   }
   .dropdown button {
@@ -65,7 +68,8 @@
     border-radius: 5px;
     margin-top: -2px;
     padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 60px;
+
   }
   
   .dropdown button:hover {
@@ -78,6 +82,8 @@
     position: absolute;
     color: white;
     z-index: 2;
+    margin-left: 60px;
+
   }
   
   .dropdown:hover .dropdown-options {
@@ -85,9 +91,10 @@
     display: flex;
     flex-direction: column;
     background-color: #14539a;
-    width: 130px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    width: 120px;
+    height: 120px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     color: white;
   }
   
@@ -95,6 +102,7 @@
     text-decoration: none;
     padding-left: 10px;
     color: white;
+    margin-top: 10px;
   }
   
   .dropdown:hover .dropdown-options a:hover {

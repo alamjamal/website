@@ -7,7 +7,7 @@ function PeopleSay() {
     <div>
 
     </div>
-    <div className="people-say" style={{marginTop:'20px'}}>
+    <div className="people-say" >
       <p>Testimonial</p>
       <h1>What People Say</h1>
       <div className="quotes-box-row">
