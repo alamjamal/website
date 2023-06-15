@@ -125,7 +125,6 @@ function Navbar() {
 						</div>
               </Grid>
               <Grid item xs={6}>
-              
                 <Tabs
                   textColor="none"
                   value={value}
