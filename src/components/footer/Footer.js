@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css"; // Import your CSS file
 import eDeekshamLogo from "../../assets/images/edeeksham_logo_new-removebg-preview.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import { Link } from "react-router-dom";
+import {
+  List,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+} from "@mui/material";
+import {BiUpArrow,BiDownArrow} from 'react-icons/bi'
+
 function Footer() {
+  const [tab, setTab] = useState(false);
   return (
     <div>
       {/* ======================================================= Footer section start ======================================================= */}
@@ -24,15 +34,77 @@ function Footer() {
           </div>
           <div className="footer-second">
             <h3>Quick Links</h3>
-            <ul>
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Contact Us</li>
-              <li>Workshop</li>
-              <li>Training</li>
-              <li>Insight</li>
-              <li>FAQs</li>
-            </ul>
+            <List>
+              <ListItemButton onClick={() => setTab(!tab)} >
+                <ListItemIcon>
+                  <ListItemText sx={{ color: "white" }}>
+                    About{" "}
+                    {tab ? (
+                      <BiDownArrow fontSize={12} />
+                    ) : (
+                      <BiUpArrow fontSize={12} />
+                    )}{" "}
+                  </ListItemText>
+                </ListItemIcon>
+              </ListItemButton>
+              {tab && (
+                <div style={{ marginLeft: "25px" }}>
+                  <ListItemButton component={Link} to="/Edeeksham">
+                    <ListItemIcon>
+                      <ListItemText sx={{ color: "white" }}>
+                        E-deeksham
+                      </ListItemText>
+                    </ListItemIcon>
+                  </ListItemButton>
+                  <ListItemButton component={Link} to="/Team">
+                    <ListItemIcon>
+                      <ListItemText sx={{ color: "white" }}>
+                        Our Team
+                      </ListItemText>
+                    </ListItemIcon>
+                  </ListItemButton>
+                  <ListItemButton component={Link} to="/Expert">
+                    <ListItemIcon>
+                      <ListItemText sx={{ color: "white" }}>
+                        Experts
+                      </ListItemText>
+                    </ListItemIcon>
+                  </ListItemButton>
+                  <ListItemButton component={Link} to="/Manuu" >
+                    <ListItemIcon>
+                      <ListItemText sx={{ color: "white" }}>MANUU</ListItemText>
+                    </ListItemIcon>
+                  </ListItemButton>
+                </div>
+              )}
+              <ListItemButton component={Link} to="/Workshop">
+                <ListItemIcon>
+                  <ListItemText sx={{ color: "white" }}>Workshop</ListItemText>
+                </ListItemIcon>
+              </ListItemButton>
+              <ListItemButton component={Link} to="/Training">
+                <ListItemIcon>
+                  <ListItemText sx={{ color: "white" }}>Training</ListItemText>
+                </ListItemIcon>
+              </ListItemButton>
+              <ListItemButton component={Link} to="/Contact">
+                <ListItemIcon>
+                  <ListItemText sx={{ color: "white" }}>
+                    Contact Us
+                  </ListItemText>
+                </ListItemIcon>
+              </ListItemButton>
+              <ListItemButton component={Link} to="/Insight">
+                <ListItemIcon>
+                  <ListItemText sx={{ color: "white" }}>Insight</ListItemText>
+                </ListItemIcon>
+              </ListItemButton>
+              <ListItemButton component={Link} to="/Faq" >
+                <ListItemIcon>
+                  <ListItemText sx={{ color: "white" }}>FAQs</ListItemText>
+                </ListItemIcon>
+              </ListItemButton>
+            </List>
           </div>
           <div className="footer-third">
             <h3>Contact Us</h3>

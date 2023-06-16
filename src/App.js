@@ -12,26 +12,28 @@ import Edeeksham from "./components/e-deeksham/e-deeksham";
 import Manuu from "./components/manuu/manuu";
 import Team from "./components/team/team";
 import Expert from "./components/experts/expert";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar/>
+        <ScrollToTop/>
+        <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
-           <Route exact path="/Edeeksham" element={<Edeeksham />}></Route>
+          <Route exact path="/Edeeksham" element={<Edeeksham />}></Route>
           <Route exact path="/Manuu" element={<Manuu />}></Route>
-           <Route exact path="/Team" element={<Team />}></Route> 
+          <Route exact path="/Team" element={<Team />}></Route>
           <Route exact path="/Expert" element={<Expert />}></Route>
-           <Route exact path="/Workshop" element={<Workshop />}></Route>
+          <Route exact path="/Workshop" element={<Workshop />}></Route>
           <Route exact path="/Training" element={<Training />}></Route>
           <Route exact path="/Contact" element={<Contact />}></Route>
           <Route exact path="/Insight" element={<Insight />}></Route>
-          <Route exact path="/Faq" element={<Faqs />}></Route> 
-        </Routes> 
+          <Route exact path="/Faq" element={<Faqs />}></Route>
+        </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </>
   );
 }
