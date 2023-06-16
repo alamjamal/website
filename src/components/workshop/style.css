@@ -242,11 +242,11 @@
       }
       
       .img-about {
-        width: 90%;
+        width: 100%;
         height: auto;
         max-height: 400px; /* Adjust the max-height as needed */
         object-fit: cover;
         border-radius: 0px 0px 40px 50px;
-        margin-top: 265px;
+        margin-top: 170px;
       }
   }

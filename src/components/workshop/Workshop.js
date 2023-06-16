@@ -5,11 +5,9 @@ const Workshop = () => {
   return (
     <div>
       <div className="img-div">
+      
         <img className="img-about" src={photo} alt="home" />
-        <div className="quote-overlay">
-    <h2 className="quote">"Workshops"</h2>
-    <p className="quote-author">Upcoming..</p>
-  </div>
+        <h1>WORKSHOP</h1>
       </div>
       <div className="row-1">
         <div className="video-part">
