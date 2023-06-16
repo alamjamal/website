@@ -137,7 +137,7 @@ function Team() {
         <div className="L2">
           <div className="l2-image">
             {/* <img src="./images/pardeep sir-photo.jpg" alt="pardeep sir"> */}
-            <img src={dummyPhoto} alt="dummy photo"  />
+            <img src={dummyPhoto} alt="dummy photo" />
           </div>
         </div>
       </section>
@@ -335,8 +335,7 @@ function Team() {
                 <i className="fab fa-twitter " />
                 <i className="fab fa-youtube" />
               </div>
-              {/* <img src="https://raw.githubusercontent.com/Hibbanur-Rahman/images-for-whatsapp/main/WhatsApp%20Image%202023-02-02%20at%2015.40.28.jpg"
-                      alt="Hibbanur-Rahman"> */}
+
               <img src={dummyPhoto} alt="dummy photo" />
             </div>
             <div className="name">
