@@ -95,6 +95,7 @@
     .process-section-img {
       margin-left: 0;
       padding-top: 0;
+      
     }
   
     .process-section .box-background {
@@ -109,6 +110,7 @@
   
     .process-section-img img {
       border-radius: 15px;
+      margin-left: 15px;
     }
   }
   
