@@ -13,6 +13,7 @@ import Manuu from "./components/manuu/manuu";
 import Team from "./components/team/team";
 import Expert from "./components/experts/expert";
 import ScrollToTop from "./ScrollToTop";
+import PublicEvents from "./components/PublicEvents/Workshop";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/Team" element={<Team />}></Route>
           <Route exact path="/Expert" element={<Expert />}></Route>
           <Route exact path="/Workshop" element={<Workshop />}></Route>
+          <Route exact path="/publicevents" element={<PublicEvents />}></Route>
           <Route exact path="/Training" element={<Training />}></Route>
           <Route exact path="/Contact" element={<Contact />}></Route>
           <Route exact path="/Insight" element={<Insight />}></Route>

@@ -8,12 +8,14 @@ const Workshop = () => {
       
         <img className="img-about" src={photo} alt="home" />
         <h1>WORKSHOP</h1>
+       
       </div>
       <div className="row-1">
         <div className="video-part">
           <video src={video} type="video/mp4" className="video" controls>
             djkssd
           </video>
+
         </div>
         <div className="content-part">
           <h5>Upcoming</h5>

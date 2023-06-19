@@ -25,11 +25,7 @@ function Footer() {
               <img src={eDeekshamLogo} alt="e-deeksham logo" />
             </div>
             <p>
-              E-Deekshaam assesses, customizes, and tailors learning plans for
-              intellectually disabled children, providing interactive lessons
-              and games based on their needs, tracking progress, and generating
-              reports to facilitate data-driven decision-making and
-              individualized support.
+            Adaptive Assistive System for Children with Intellectual Disability
             </p>
           </div>
           <div className="footer-second">

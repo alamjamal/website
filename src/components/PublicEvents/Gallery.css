@@ -1,0 +1,30 @@
+.carousel112 {
+  width: 100%;
+  height: 400px;
+  margin-top: -60px;
+  margin-bottom: 100px;
+}
+
+.carousel112 img {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (max-width: 767px) {
+    .carousel112 {
+        width: 100%;
+        height: 300px;
+        margin-top: -80px;
+        margin-bottom: 50px;
+      }
+      
+      .carousel112 img {
+        width: 100%;
+        height: 100%;
+      }
+      
+.carousel .thumbs-wrapper {
+    visibility: hidden;
+}
+  }

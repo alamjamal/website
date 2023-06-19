@@ -1,21 +1,22 @@
 .map-section {
-  width: 100%;
   background-color: rgb(238, 243, 253);
-  padding-top: 100px;
-  margin-top: 100px;
-  height: auto;
+  padding: 20px;
+  margin-top: 50px;
+  margin: auto;
+}
+body{
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 .map-section-div {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   border: 2px solid white;
   margin: auto;
   border-radius: 20px;
   box-shadow: 3px 3px 3px -1px rgb(248, 244, 244);
   background-color: white;
-  padding-top: 80px;
 }
 
 .india-map {
@@ -25,12 +26,11 @@
 .analysis {
   width: 100%;
   margin-top: 30px;
-  
 }
 
 .container {
   width: 100%;
-  max-width: 538px;
+  max-width: 600px;
   margin: auto;
   height: auto;
   justify-content: center;
@@ -44,7 +44,6 @@
   overflow: hidden;
   width: 90%;
   margin-bottom: 20px;
-  margin-left: 15px;
 }
 
 .analysis-nav ul {
@@ -77,7 +76,6 @@
   margin-bottom: 20px;
   word-spacing: 3px;
   margin-left: 9px;
-  margin-left: 15px;
 }
 
 .states-selection select {
@@ -90,8 +88,6 @@
   padding-right: 10px;
   border: none;
   cursor: pointer;
-  margin-left: 15px;
-
 }
 
 .states-selection select:focus {
@@ -102,16 +98,17 @@
   width: 90%;
   height: auto;
   margin-top: 20px;
-  border-bottom: 1px solid rgb(226, 217, 217);
   margin-bottom: 40px;
 }
 
 .state-data table {
   width: 100%;
+  height: 350px;
+  max-width: 500px;
   border-collapse: collapse;
   border-radius: 10px;
-  overflow: hidden;
-  margin-left: 15px;
+  overflow-y: scroll;
+  display: flex;
 }
 
 .state-data table tr {
@@ -122,6 +119,8 @@
 
 .state-data table tr td {
   border: 3px;
+  padding-left: 38px;
+  padding-right: 38px;
 }
 
 .state-data table tr:nth-child(even) {
@@ -175,9 +174,26 @@
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .state-data table {
+    width: 110%;
+    height: 350px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow-y: scroll;
+    display: flex;
+    margin-left: 5px;
+  }
+  .state-data table tr td {
+    border: 3px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .map-section-div {
-    width: 70%;
+    width: 100%;
   }
 
   .india-map {
@@ -187,4 +203,21 @@
   .analysis {
     width: 42%;
   }
+}
+
+
+.viewMoreDetails{
+padding: 16px 32px;
+width: 207px;
+height: 48px;
+
+border-radius: 8px;
+margin-bottom: 25px;
+color: rgb(255, 255, 255);
+background-color: #14539a;
+}
+
+.viewMoreDetails:hover{
+color: rgb(255, 255, 255);
+background-color: #3f99ff;
 }

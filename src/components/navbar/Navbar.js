@@ -3,8 +3,6 @@ import {
   Box,
   Button,
   Grid,
-  Menu,
-  MenuItem,
   Tab,
   Tabs,
   Toolbar,
@@ -48,50 +46,56 @@ function Navbar() {
                 height="60px"
               />
             </div>
-           {isMatch &&<div className="logo-photo">
-              <img
-                src={manuulogo}
-                alt="manuu-logo"
-                width="60px"
-                height="60px"
-              />
-            </div>}
+            {isMatch && (
+              <div className="logo-photo">
+                <img
+                  src={manuulogo}
+                  alt="manuu-logo"
+                  width="60px"
+                  height="60px"
+                />
+              </div>
+            )}
             {isMatch ? (
               ""
             ) : (
               <>
-              <div className="head-title">
-                <div>
-                  <h1>
-                    Adaptive Assistive System for children With Intellectual
-                    Disability
-                  </h1>
+                <div className="head-title">
+                  <div>
+                    <h1 style={{ whiteSpace: 'nowrap' }}>
+                      Adaptive Assistive System for children With Intellectual Disability
+
+                    </h1>
+                  </div>
                 </div>
-              </div>
-               <div className="right-div">
-               <div className="logo-photo">
-              <img
-                src={manuulogo}
-                alt="manuu-logo"
-                width="70px"
-                height="80px"
-              />
-            </div>
-               </div>
-               </>
+                <div className="right-div">
+                  <div className="logo-photo">
+                    <img
+                      src={manuulogo}
+                      alt="manuu-logo"
+                      width="70px"
+                      height="80px"
+                    />
+                  </div>
+                </div>
+              </>
             )}
           </div>
-         
         </div>
         <Toolbar sx={{ backgroundColor: "#0A2463" }}>
           {isMatch ? (
             <>
               {" "}
-              <Grid item xs={2}>
+              <Grid item xs={1}>
                 <Link to="/">
                   <Button
                     variant="text"
-                    sx={{ color: "white", fontSize: "large" }}
+                    sx={{
+                      fontSize: "13px",
+                      fontWeight: "light",
+                      fontFamily: '"Source Sans Pro", sans-serif',
+                      color: "white",
+                    }}
                   >
                     HOME
                   </Button>
@@ -101,48 +105,98 @@ function Navbar() {
             </>
           ) : (
             <Grid sx={{ placeItems: "center" }} container>
-              <Grid item xs={2}>
+              <Grid item xs={1}>
                 <Link to="/">
                   <Button
                     variant="text"
-                    sx={{ color: "white", fontSize: "large" }}
+                    sx={{
+                      fontSize: "13px",
+                      fontWeight: "light",
+                      fontFamily: '"Source Sans Pro", sans-serif',
+                      color: "white",
+                    }}
                   >
                     HOME
                   </Button>
                 </Link>
               </Grid>
 
-
-              <Grid item xs={1}>
-              <div className="dropdown">
-							<button className="dropdown-btn">About</button>
-							<div className={`dropdown-options`}>
-								<Link to="/Edeeksham">E-Deeksham</Link>
-								<Link to="/Manuu">MANUU</Link>
-								<Link to="/Team">Our Team</Link>
-								<Link to="/Expert">Experts</Link>
-							</div>
-						</div>
+              <Grid item>
+                <div className="dropdown">
+                  <button className="dropdown-btn">ABOUT</button>
+                  <div className={`dropdown-options`}>
+                    <Link to="/Edeeksham">E-Deeksham</Link>
+                    <Link to="/Manuu">MANUU</Link>
+                    <Link to="/Team">Our Team</Link>
+                    <Link to="/Expert">Experts</Link>
+                  </div>
+                </div>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item>
+                <div className="dropdown">
+                  <button className="dropdown-btn">EVENTS</button>
+                  <div className={`dropdown-options`}>
+                    <Link to="/Workshop">Workshops</Link>
+                    <Link to="/Training">Trainings</Link>
+                    <Link to="/publicevents">Public Events</Link>
+                  </div>
+                </div>
+              </Grid>
+              <Grid item xs={5}>
                 <Tabs
                   textColor="none"
                   value={value}
                   onChange={(e, val) => setValue(val)}
                   TabIndicatorProps={{
-                    style: { display: "none" },
+                    style: { display: "none", fontSize: 10 },
                   }}
                 >
-                  
-                  <Tab label="Workshop" component={Link} to="/Workshop" />
-                  <Tab label="Training" component={Link} to="/Training" />
-                  <Tab label="Contact Us" component={Link} to="/Contact" />
-                  <Tab label="Insight" component={Link} to="/Insight" />
-                  <Tab label="FAQs" component={Link} to="/Faq" />
+                  {/* <Tab label="Events" component={Link} to="/Workshop" /> */}
+                  {/* <Tab label="Workshop" component={Link} to="/Workshop" />
+                  <Tab label="Training" component={Link} to="/Training" /> */}
+                  <Tab
+                    sx={{
+                      fontSize: "13px",
+                      fontWeight: "light",
+                      fontFamily: '"Source Sans Pro", sans-serif',
+                    }}
+                    label="Collaboration"
+                    component={Link}
+                    to=""
+                  />
+                  <Tab
+                    sx={{
+                      fontSize: "13px",
+                      fontWeight: "light",
+                      fontFamily: '"Source Sans Pro", sans-serif',
+                    }}
+                    label="Contact Us"
+                    component={Link}
+                    to="/Contact"
+                  />
+                  <Tab
+                    sx={{
+                      fontSize: "13px",
+                      fontWeight: "light",
+                      fontFamily: '"Source Sans Pro", sans-serif',
+                    }}
+                    label="Insight"
+                    component={Link}
+                    to="/Insight"
+                  />
+                  <Tab
+                    sx={{
+                      fontSize: "13px",
+                      fontWeight: "light",
+                      fontFamily: '"Source Sans Pro", sans-serif',
+                    }}
+                    label="FAQs"
+                    component={Link}
+                    to="/Faq"
+                  />
                 </Tabs>
               </Grid>
-              <Grid item xs={1} />
-              <Grid item xs={2}>
+              <Grid item xs={3}>
                 <Box display="flex" alignItems="center">
                   <Button
                     sx={{ marginLeft: "auto", color: "white" }}

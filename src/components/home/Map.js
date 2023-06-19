@@ -1,52 +1,53 @@
 import React, { useRef } from "react";
-import './map.css'
+import "./map.css";
+import { Button } from "@mui/material";
 function Map() {
-    const tooltipSpan = useRef(null);
+  const tooltipSpan = useRef(null);
 
-    function display(e) {
-      if (e.target.tagName === 'path') {
-        if (tooltipSpan.current) {
-          tooltipSpan.current.style.opacity = '1';
-          tooltipSpan.current.style.display = 'block';
-          var content = e.target.dataset.name;
-          tooltipSpan.current.innerHTML = content;
-        }
-      } else {
-        if (tooltipSpan.current) {
-          tooltipSpan.current.style.opacity = '0';
-          tooltipSpan.current.classList.add('hide');
-          tooltipSpan.current.style.display = 'none';
-        }
+  function display(e) {
+    if (e.target.tagName === "path") {
+      if (tooltipSpan.current) {
+        tooltipSpan.current.style.opacity = "1";
+        tooltipSpan.current.style.display = "block";
+        var content = e.target.dataset.name;
+        tooltipSpan.current.innerHTML = content;
       }
-      window.onmousemove = function (e) {
-        if (tooltipSpan.current) {
-          var x = e.clientX,
-            y = e.clientY;
-          tooltipSpan.current.style.top = y + 20 + 'px';
-          tooltipSpan.current.style.left = x + 'px';
-        }
-      };
+    } else {
+      if (tooltipSpan.current) {
+        tooltipSpan.current.style.opacity = "0";
+        tooltipSpan.current.classList.add("hide");
+        tooltipSpan.current.style.display = "none";
+      }
     }
-  
-    // function del() {
-    //   var x = document.getElementsByClassName('demo');
-    //   x[0].style.width = '0px';
-    //   x[0].style.height = '0px';
-    //   x[0].style.zIndex = '-1';
-    //   x[0].style.transition = 'all 0.6s ease-in-out';
-  
-    //   let dele = document.getElementById('delete');
-    //   dele.style.width = '0px';
-    //   dele.style.height = '0px';
-    //   dele.style.transition = 'all 0.6s ease-in-out';
-  
-    //   var mapimage = document.getElementsByClassName('map-image');
-    //   mapimage[0].style.width = '0px';
-    //   mapimage[0].style.height = '0px';
-    //   mapimage[0].style.transition = 'all 0.6s ease-in-out';
-    // }
+    window.onmousemove = function (e) {
+      if (tooltipSpan.current) {
+        var x = e.clientX,
+          y = e.clientY;
+        tooltipSpan.current.style.top = y + 20 + "px";
+        tooltipSpan.current.style.left = x + "px";
+      }
+    };
+  }
+
+  // function del() {
+  //   var x = document.getElementsByClassName('demo');
+  //   x[0].style.width = '0px';
+  //   x[0].style.height = '0px';
+  //   x[0].style.zIndex = '-1';
+  //   x[0].style.transition = 'all 0.6s ease-in-out';
+
+  //   let dele = document.getElementById('delete');
+  //   dele.style.width = '0px';
+  //   dele.style.height = '0px';
+  //   dele.style.transition = 'all 0.6s ease-in-out';
+
+  //   var mapimage = document.getElementsByClassName('map-image');
+  //   mapimage[0].style.width = '0px';
+  //   mapimage[0].style.height = '0px';
+  //   mapimage[0].style.transition = 'all 0.6s ease-in-out';
+  // }
   return (
-    <div className="map-section" >
+    <div className="map-section">
       <div className="map-section-div">
         <div className="india-map">
           <div
@@ -729,10 +730,48 @@ function Map() {
               <option value>Assam</option>
               <option value>Bihar</option>
               <option value>Chattisgarh</option>
-              <option value>Chandigarh</option>
-              <option value>New Delhi</option>
-              <option value>Goa</option>
+              <option value>Goa </option>
               <option value>Gujarat</option>
+              <option value>Haryana </option>
+              <option value>Himachal Pradesh </option>
+              <option value>Jammu and Kashmir </option>
+
+              <option value>Jharkhand </option>
+
+              <option value>Karnataka </option>
+
+              <option value>Kerala </option>
+
+              <option value>Madhya Pradesh </option>
+
+              <option value>Maharashtra </option>
+
+              <option value>Manipur </option>
+
+              <option value>Meghalaya</option>
+
+              <option value>Mizoram </option>
+
+              <option value>Nagaland </option>
+
+              <option value>Odisha </option>
+
+              <option value>Punjab </option>
+
+              <option value>Rajasthan </option>
+
+              <option value>Sikkim </option>
+
+              <option value>Tamil Nadu </option>
+
+              <option value>Telangana </option>
+
+              <option value>Tripura </option>
+
+              <option value>Uttar Pradesh </option>
+
+              <option value>Uttarakhand </option>
+              <option value>West Bengal </option>
             </select>
           </div>
           <div className="state-data">
@@ -755,12 +794,12 @@ function Map() {
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>Jammu & Kashmir</td>
+                  <td>Jammu &amp; Kashmir</td>
                   <td>2</td>
                 </tr>
                 <tr>
                   <td>4</td>
-                  <td>Uttar Pardesh</td>
+                  <td>Uttar Pradesh</td>
                   <td>2</td>
                 </tr>
                 <tr>
@@ -785,7 +824,7 @@ function Map() {
                 </tr>
                 <tr>
                   <td>9</td>
-                  <td>Gujarat </td>
+                  <td>Gujarat</td>
                   <td>--</td>
                 </tr>
                 <tr>
@@ -793,9 +832,115 @@ function Map() {
                   <td>Ladakh</td>
                   <td>--</td>
                 </tr>
+                <tr>
+                  <td>11</td>
+                  <td>Arunachal Pradesh</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Assam</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>Bihar</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>Chhattisgarh</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>Goa</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>Haryana</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>Himachal Pradesh</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>Jharkhand</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>Karnataka</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>Madhya Pradesh</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>21</td>
+                  <td>Manipur</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>Meghalaya</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>23</td>
+                  <td>Mizoram</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>24</td>
+                  <td>Nagaland</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>25</td>
+                  <td>Odisha</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>26</td>
+                  <td>Punjab</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>27</td>
+                  <td>Rajasthan</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>28</td>
+                  <td>Sikkim</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>29</td>
+                  <td>Tripura</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>30</td>
+                  <td>Uttarakhand</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>31</td>
+                  <td>West Bengal</td>
+                  <td>--</td>
+                </tr>
               </tbody>
             </table>
           </div>
+          <Button className="viewMoreDetails">View More Details</Button>
           <div
             style={{ display: "flex" }}
             className="details-analysis-box-container"

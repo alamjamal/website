@@ -1,117 +1,115 @@
 .process-section {
-    background-color: white;
-    display: flex;
-    padding-top: 123px;
-    height: 780px;
+  background-color: white;
+  display: flex;
+  padding-top: 123px;
+  height: 780px;
+}
+
+.process-image {
+  width: 50%;
+  margin-left: 10px;
+}
+
+.process-theory {
+  width: 45%;
+}
+
+.process-section-img img {
+  width: 90%;
+  height: 600px;
+  border-radius: 50px;
+}
+
+.process-section .box-background {
+  width: 200px;
+  height: 180px;
+  background-color: rgb(167, 240, 200);
+  transform: rotate(-47deg);
+  position: absolute;
+  border-radius: 20px;
+  margin-top: -103px;
+  margin-left: 82px;
+}
+
+.process-section-img {
+  z-index: 2;
+  position: relative;
+  width: 70%;
+  margin-left: 50px;
+}
+
+.first-p {
+  color: #14539a;
+  font-size: 20px;
+}
+
+.process-theory p:nth-child(3) {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.process-theory h1 {
+  width: 80%;
+  line-height: 46px;
+  font-size: 44px;
+  margin-top: 20px;
+}
+
+.process-theory ul li {
+  list-style: none;
+  width: 90%;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+}
+
+.process-theory ul li p {
+  font-weight: 100;
+ /* // opacity: 0.8; */
+}
+
+.process-theory ul li i {
+  font-size: 25px;
+  margin-right: 20px;
+  color: #14539a;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  .process-section {
+    flex-direction: column;
+    padding-top: 50px;
+    height: auto;
   }
-  
+
   .process-image {
-    width: 55%;
-    margin-left: 30px;
+    width: 100%;
+    margin-left: 0;
   }
-  
-  .process-theory {
-    width: 45%;
-  }
-  
-  .process-section-img img {
-    width: 90%;
-    height: 600px;
-    border-radius: 25px;
-  }
-  
-  .process-section .box-background {
-    width: 200px;
-    height: 180px;
-    background-color: rgb(167, 240, 200);
-    transform: rotate(-47deg);
-    position: absolute;
-    border-radius: 20px;
-    margin-top: -103px;
-    margin-left: 82px;
-  }
-  
+
   .process-section-img {
-    margin-left: 185px;
-    z-index: 2;
-    position: relative;
+    margin-left: 50px;
+    padding-top: 0;
   }
-  
-  .first-p {
-    color: #14539a;
-    font-size: 20px;
+
+  .process-section .box-background {
+    margin-left: 0;
   }
-  
-  .process-theory p:nth-child(3) {
-    width: 90%;
-    margin-top: 20px;
-    margin-bottom: 50px;
+
+  .process-theory {
+    width: 100%;
+    margin-top: 130px;
+    padding: 15px;
   }
-  
-  .process-theory h1 {
-    width: 80%;
-    line-height: 46px;
-    font-size: 44px;
-    margin-top: 20px;
+
+  .process-section-img img {
+    border-radius: 50px;
+    margin-left: 10px;
   }
-  
-  .process-theory ul li {
-    list-style: none;
-    width: 90%;
-    font-size: 15px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    color: black;
-    display: flex;
-    align-items: center;
-    font-weight: 100;
-  }
-  
-  .process-theory ul li p {
-    font-weight: 100;
-    opacity: 0.8;
-  }
-  
-  .process-theory ul li i {
-    font-size: 25px;
-    margin-right: 20px;
-    color: #14539a;
-  }
-  
-  /* Media Queries */
-  
-  @media only screen and (max-width: 768px) {
-    .process-section {
-      flex-direction: column;
-      padding-top: 50px;
-      height: auto;
-    }
-  
-    .process-image {
-      width: 100%;
-      margin-left: 0;
-    }
-  
-    .process-section-img {
-      margin-left: 0;
-      padding-top: 0;
-      
-    }
-  
-    .process-section .box-background {
-      margin-left: 0;
-    }
-  
-    .process-theory {
-      width: 100%;
-      margin-top: 130px;
-      padding: 15px;
-    }
-  
-    .process-section-img img {
-      border-radius: 15px;
-      margin-left: 15px;
-    }
-  }
-  
-  
+}

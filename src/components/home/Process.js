@@ -8,7 +8,6 @@ function Process() {
         <div className="process-section-img">
           <img src={processImage} alt="processimage" />
         </div>
-        <div className="box-background" />
       </div>
       <div className="process-theory">
         <p className="first-p">How does it work</p>

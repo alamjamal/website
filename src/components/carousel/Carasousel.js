@@ -7,10 +7,6 @@ import img2 from "../../assets/images/crausal21.jpeg";
 import img3 from "../../assets/images/carousal3.jpg";
 import "./style.css";
 
-// import img1 from "../images/carousal1.jpg";
-// import img2 from "../images/crausal21.jpeg";
-// import img3 from "../images/carousal3.jpg";
-
 const Carousel = () => {
   const settings = {
     dots: true,
@@ -47,17 +43,18 @@ const Carousel = () => {
 
   return (
     <div className="carousel">
-    <Slider {...settings}>
-      <div className="img-Carousel">
-        <img src={img1} alt="Slide 1" />
-      </div>
-      <div className="img-Carousel">
-        <img src={img2} alt="Slide 2" />
-      </div>
-      <div className="img-Carousel">
-        <img src={img3} alt="Slide 3" />
-      </div>
-    </Slider>
+      <Slider {...settings}>
+        <div className="img-Carousel">
+          <img src={img1} alt="Slide 1" />
+          {/* <div className="carousel-text">Text for Slide 1</div> */}
+        </div>
+        <div className="img-Carousel">
+          <img src={img2} alt="Slide 2" />
+        </div>
+        <div className="img-Carousel">
+          <img src={img3} alt="Slide 3" />
+        </div>
+      </Slider>
     </div>
   );
 };

@@ -11,6 +11,20 @@
   z-index: 2;
   top: 220px
 }
+/* .carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} */
+
+
 
 .slick-next {
   right: 20px;
