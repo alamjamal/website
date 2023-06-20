@@ -1,13 +1,14 @@
 import "./style.css";
-import imageHead from "./images/image2.jpg";
+import imageHead from "./images/home-photo.png";
 import imageMember from "./images/m1image1.jpg";
 function Expert() {
   return (
     <div>
       {/* ======================================================= OurTeam start ====================================================== */}
-      <section className="ourteam">
-        <img src={imageHead} alt="image" srcSet />
-      </section>
+      <div className="home-photo">
+        <h1>EXPERTS</h1>
+        <img src={imageHead} alt="homephoto" />
+      </div>
       {/* ======================================================= OurTeam End ====================================================== */}
       {/* =======================================================  Expert Team Start ======================================================= */}
       <section className="experts">

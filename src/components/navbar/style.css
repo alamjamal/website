@@ -5,8 +5,12 @@
   flex-wrap: wrap;
   margin-top: 1%;
   padding: 10px;
+  gap: 40px;
 }
-
+.header div {
+  margin-left: 20px;
+  margin-right: 20px; /* Add space between items */
+}
 .left-div {
   display: flex;
   align-items: center;
@@ -27,6 +31,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header div {
+    margin-left: 10px;
+    margin-right: 10px; /* Add space between items */
+  }
   .left-div {
     width: 100%;
     justify-content: start;
@@ -43,10 +51,13 @@
 .head-title {
   width: 90%;
   margin-top: 10px;
-  color: rgb(98, 30, 4);
+  /* // color: rgb(98, 30, 4); */
   font-weight: 500px;
-  font-size: 1vw;
+  font-size: 0.8vw;
   margin-left: 40px;
+  letter-spacing: 0.05em;
+
+  color: #14539a;
 }
 
 .dropdown {

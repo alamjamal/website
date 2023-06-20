@@ -4,11 +4,9 @@ import photo from './about-E-Deeksham.png'
 const Workshop = () => {
   return (
     <div>
-      <div className="img-div">
-      
-        <img className="img-about" src={photo} alt="home" />
-        <h1>WORKSHOP</h1>
-       
+       <div className="home-photo">
+        <h1>WORKSHOPS</h1>
+        <img src={photo} alt="homephoto" />
       </div>
       <div className="row-1">
         <div className="video-part">

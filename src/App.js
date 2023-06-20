@@ -14,12 +14,13 @@ import Team from "./components/team/team";
 import Expert from "./components/experts/expert";
 import ScrollToTop from "./ScrollToTop";
 import PublicEvents from "./components/PublicEvents/Workshop";
+import Collaboration from "./components/collaboration/Collaboration";
 
 function App() {
   return (
     <>
       <Router>
-        <ScrollToTop/>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
@@ -29,6 +30,11 @@ function App() {
           <Route exact path="/Expert" element={<Expert />}></Route>
           <Route exact path="/Workshop" element={<Workshop />}></Route>
           <Route exact path="/publicevents" element={<PublicEvents />}></Route>
+          <Route
+            exact
+            path="/collaboration"
+            element={<Collaboration />}
+          ></Route>
           <Route exact path="/Training" element={<Training />}></Route>
           <Route exact path="/Contact" element={<Contact />}></Route>
           <Route exact path="/Insight" element={<Insight />}></Route>

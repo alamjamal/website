@@ -1,13 +1,12 @@
 import "./style.css";
-import image2 from "./images/image2.jpg";
+import image2 from "./images/home-photo.png";
 function Contact() {
   return (
     <div>
-      <section className="ourteam">
-       
-        <img src={image2} alt="imageas" srcSet />
-     
-      </section>
+      <div className="home-photo">
+        <h1>Contact US</h1>
+        <img src={image2} alt="homephoto" />
+      </div>
       {/* ======================================================= OurTeam start ====================================================== */}
       {/* ======================================================= mid section start ====================================================== */}
       <section className="mid">

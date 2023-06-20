@@ -173,8 +173,8 @@
   color: rgb(135 200 221);
 }
 svg:hover path {
-  fill: rgb(135 200 221) !important;
-  stroke: rgb(135 200 221) !important;
+  fill: rgb(135 200 221) ;
+  stroke: rgb(135 200 221);
 }
 .L2 {
   width: 40%;

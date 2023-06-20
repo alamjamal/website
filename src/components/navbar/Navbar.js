@@ -162,7 +162,7 @@ function Navbar() {
                     }}
                     label="Collaboration"
                     component={Link}
-                    to=""
+                    to="/collaboration"
                   />
                   <Tab
                     sx={{

@@ -1,7 +1,7 @@
 import React from "react";
 import Accordion from "./Accordion";
 import "./faqs.css";
-import img from "./img.png";
+import img from "./home-photo.png";
 import { FiMail } from "react-icons/fi";
 import { FiPhoneCall } from "react-icons/fi";
 const Faqs = () => {
@@ -38,8 +38,9 @@ const Faqs = () => {
 
   return (
     <div>
-      <div className="img-div">
-        <img className="img-about" src={img} alt />
+      <div className="home-photo">
+        <h1>FAQs</h1>
+        <img src={img} alt="homephoto" />
       </div>
       <div className="main">
         <div className="col-1">

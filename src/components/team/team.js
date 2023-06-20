@@ -1,13 +1,14 @@
 import "./style.css";
 import dummyPhoto from "./images/dummy_profile.png";
-import headPhoto from "./images/image2.jpg";
+import headPhoto from "./images/home-photo.png";
 function Team() {
   return (
     <div>
       {/* ======================================================= OurTeam start ====================================================== */}
-      <section className="ourteam">
-        <img src={headPhoto} alt="image" srcSet />
-      </section>
+      <div className="home-photo">
+        <h1>TEAM</h1>
+        <img src={headPhoto} alt="homephoto" />
+      </div>
       {/* ======================================================= OurTeam start ====================================================== */}
       {/* ======================================================= Our Leader start ====================================================== */}
       <section className="OurLeaders">

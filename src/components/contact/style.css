@@ -2,12 +2,30 @@
   /*============================================================= Our Team start ========================================================*/
   
   
-  .ourteam img {
+
+
+
+  .home-photo {
     width: 100%;
-    max-height:500px ;
-    border-bottom-left-radius: 4%;
-    border-bottom-right-radius: 4%;
-    margin-top: 100px;
+    height: 350px;
+    margin-top: 150px;
+  }
+  
+  .home-photo h1 {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+  }
+  
+  .home-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
   }
   
   /*============================================================= Our Team end ========================================================*/

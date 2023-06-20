@@ -15,7 +15,7 @@ function Home() {
       <Aboutus />
       <Process />
       <Map />
-        <PeopleSay />
+      <PeopleSay />
     </div>
   );
 }

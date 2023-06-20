@@ -942,7 +942,7 @@ function Map() {
           </div>
           <Button className="viewMoreDetails">View More Details</Button>
           <div
-            style={{ display: "flex" }}
+            style={{ display: "flex" ,marginTop: "10px" }}
             className="details-analysis-box-container"
           >
             <div className="details-s-box">

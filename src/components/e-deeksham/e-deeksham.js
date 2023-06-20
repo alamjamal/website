@@ -3,13 +3,15 @@ import aboutEdeeksham from "./aboutEDeeksham/about-E-Deeksham.png";
 import ourMission from "./aboutEDeeksham/our-mission.png";
 import image1 from "./aboutEDeeksham/image.jpg";
 import ourVission from "./aboutEDeeksham/our_vision.png";
+import Map from '../home/Map';
 
 function Edeeksham() {
     return (
         <div>
-            <div className="img-div">
-                <img className="img-about" src={aboutEdeeksham} alt />
-            </div>
+           <div className="home-photo">
+        <h1>E-DEEKSHAAM</h1>
+        <img src={aboutEdeeksham} alt="homephoto" />
+      </div>
             <div className="about-eDeeksham">
                 <div className="content-part">
                     {/* <h2>About E-Deeksham</h2> */}
