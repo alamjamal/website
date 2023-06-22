@@ -10,12 +10,14 @@
   background: #fff;
 }
 
+
 .OurLeaders h1 {
   margin-left: auto;
   margin-right: auto;
   width: 8em;
   margin-top: 5%;
 }
+
 
 .leaders1 {
   height: 100%;
@@ -598,9 +600,7 @@ svg:hover path {
 
   .setting {
     display: flex;
-    /* flex-wrap: wrap;
-        margin-left: 15%;
-        margin-right: 10%; */
+
     justify-content: center;
   }
 

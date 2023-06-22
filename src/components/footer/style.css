@@ -26,7 +26,7 @@ body {
 .footer-upper {
   display: flex;
   margin: auto;
-  width: 80%;
+  width: 100%;
   flex-wrap: wrap; /* Allow wrapping of content */
 }
 

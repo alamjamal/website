@@ -5,43 +5,8 @@ import { Box, Grid, Tab, Tabs } from "@mui/material";
 import School from "./School";
 import NGO from "./NGOs";
 import Professionals from "./Professionals";
-import Map from "../home/Map";
 
 function Collaboration() {
-  // const cardData = [
-  //   {
-  //     image: boxImage,
-  //     title: "School Name 1",
-  //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  //   },
-  //   {
-  //     image: boxImage,
-  //     title: "School Name 2",
-  //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  //   },
-  //   {
-  //     image: boxImage,
-  //     title: "School Name 1",
-  //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  //   },
-  //   {
-  //     image: boxImage,
-  //     title: "School Name 2",
-  //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  //   },
-  //   {
-  //     image: boxImage,
-  //     title: "School Name 1",
-  //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  //   },
-  //   {
-  //     image: boxImage,
-  //     title: "School Name 2",
-  //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  //   },
-  //   // Add more card data objects as needed
-  // ];
-
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
