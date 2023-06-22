@@ -5,6 +5,7 @@ import { Box, Grid, Tab, Tabs } from "@mui/material";
 import School from "./School";
 import NGO from "./NGOs";
 import Professionals from "./Professionals";
+import Map from "../home/Map";
 
 function Collaboration() {
   // const cardData = [

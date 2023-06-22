@@ -19,50 +19,49 @@ function Process() {
           E-Deekshaam customises learning plans for each child. The plan details
           the child-specific learning objectives, content, and activities.
         </p>
-        <div className="process-theory-list">
-          <ul>
-            <li>
-              <i className="bi bi-check-circle" />
-              {/* //<CheckCircleOutlineIcon/>  */}
-              <p>
-                E-Deekshaam's interactive lessons, videos, and games are
-                tailored to the child's needs and pace.
-              </p>
-            </li>
-            <li>
-              <i className="bi bi-check-circle" />
-              <p>
-                E-Deekshaam adjusts the child's education plan and content as
-                they progress.
-              </p>
-            </li>
-            <li>
-              <i className="bi bi-check-circle" />
-              <p>
-                It will help or challenge the child based on performance and
-                feedback.It also tracks and evaluates intellectually disabled
-                children.
-              </p>
-            </li>
-            <li>
-              <i className="bi bi-check-circle" />
-              <p>
-                The system can track children's progress for teachers, parents,
-                and therapists.
-              </p>
-            </li>
-            <li>
-              <i className="bi bi-check-circle" />
-              <p>
-                E-Deekshaam reports and analyses the child's strengths,
-                weaknesses, and progress. These reports help teachers and staff
-                make data-driven decisions. Progress tracking and assessment
-                enable individualised instructional strategies and support for
-                the child.
-              </p>
-            </li>
-          </ul>
-        </div>
+
+        <ul>
+          <li>
+            <i className="bi bi-check-circle" />
+
+            <p>
+              E-Deekshaam's interactive lessons, videos, and games are tailored
+              to the child's needs and pace.
+            </p>
+          </li>
+          <li>
+            <i className="bi bi-check-circle" />
+            <p>
+              E-Deekshaam adjusts the child's education plan and content as they
+              progress.
+            </p>
+          </li>
+          <li>
+            <i className="bi bi-check-circle" />
+            <p>
+              It will help or challenge the child based on performance and
+              feedback.It also tracks and evaluates intellectually disabled
+              children.
+            </p>
+          </li>
+          <li>
+            <i className="bi bi-check-circle" />
+            <p>
+              The system can track children's progress for teachers, parents,
+              and therapists.
+            </p>
+          </li>
+          <li>
+            <i className="bi bi-check-circle" />
+            <p>
+              E-Deekshaam reports and analyses the child's strengths,
+              weaknesses, and progress. These reports help teachers and staff
+              make data-driven decisions. Progress tracking and assessment
+              enable individualised instructional strategies and support for the
+              child.
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
   );

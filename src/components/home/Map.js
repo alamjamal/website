@@ -54,7 +54,7 @@ function Map() {
             id="details-box"
             ref={tooltipSpan}
             className="details-box2"
-            style={{ opacity: 0, top: 120, left: 230 }}
+            //style={{ opacity: 0, top: 120, left: 230 }}
           ></div>
           <div className="container" onMouseOver={display}>
             <svg
