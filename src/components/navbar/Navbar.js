@@ -37,6 +37,7 @@ function Navbar() {
                 width="140px"
                 height="60px"
               />
+              <p style={{color:'#14539a',fontSize:'12px', marginLeft:'30px',marginTop:'-5px'}}>Government of India </p>
             </div>
             <div className="logo-photo">
               <img

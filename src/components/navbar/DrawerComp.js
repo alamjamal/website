@@ -17,6 +17,7 @@ import {BiUpArrow,BiDownArrow} from 'react-icons/bi'
 function DrawerComp() {
   const [open, setOpen] = useState(false);
   const [tab, setTab] = useState(false);
+  const [tab1, setTab1] = useState(false);
 
   return (
     <>
@@ -31,7 +32,7 @@ function DrawerComp() {
         anchor="right"
       >
         <List>
-          <ListItemButton onClick={()=>setTab(!tab)} divider>
+          <ListItemButton onClick={()=>setTab(!tab)} >
             <ListItemIcon>
               <ListItemText sx={{ color: "white" }}>About {tab? <BiDownArrow fontSize={12}/>:<BiUpArrow fontSize={12} />} </ListItemText>
             </ListItemIcon>
@@ -80,24 +81,46 @@ function DrawerComp() {
               </ListItemButton>
             </div>
           )}
-          <ListItemButton
-            onClick={() => setOpen(false)}
-            component={Link}
-            to="/Workshop"
-          >
+             <ListItemButton onClick={()=>setTab1(!tab1)} >
             <ListItemIcon>
-              <ListItemText sx={{ color: "white" }}>Workshop</ListItemText>
+              <ListItemText sx={{ color: "white" }}>Events {tab1? <BiDownArrow fontSize={12}/>:<BiUpArrow fontSize={12} />} </ListItemText>
             </ListItemIcon>
           </ListItemButton>
-          <ListItemButton
-            onClick={() => setOpen(false)}
-            component={Link}
-            to="/Training"
-          >
-            <ListItemIcon>
-              <ListItemText sx={{ color: "white" }}>Training</ListItemText>
-            </ListItemIcon>
-          </ListItemButton>
+          {tab1 && (
+            <div style={{marginLeft:'25px'}}>
+              <ListItemButton
+                onClick={() => setOpen(false)}
+                component={Link}
+                to="/Workshop"
+                
+              >
+                <ListItemIcon>
+                  <ListItemText sx={{ color: "white" }}>
+                    Workshop
+                  </ListItemText>
+                </ListItemIcon>
+              </ListItemButton>
+              <ListItemButton
+                onClick={() => setOpen(false)}
+                component={Link}
+                to="/Training"
+              >
+                <ListItemIcon>
+                  <ListItemText sx={{ color: "white" }}>Training</ListItemText>
+                </ListItemIcon>
+              </ListItemButton>
+              <ListItemButton
+                onClick={() => setOpen(false)}
+                component={Link}
+                to="/publicevents"
+              >
+                <ListItemIcon>
+                  <ListItemText sx={{ color: "white" }}>Public Events</ListItemText>
+                </ListItemIcon>
+              </ListItemButton>
+            </div>
+          )}
+          
           <ListItemButton
             onClick={() => setOpen(false)}
             component={Link}

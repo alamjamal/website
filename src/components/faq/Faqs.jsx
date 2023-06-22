@@ -1,7 +1,7 @@
 import React from "react";
 import Accordion from "./Accordion";
 import "./faqs.css";
-import img from "./home-photo.png";
+import img from "src/assets/images/home-photo.png";
 import { FiMail } from "react-icons/fi";
 import { FiPhoneCall } from "react-icons/fi";
 const Faqs = () => {

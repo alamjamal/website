@@ -1,6 +1,6 @@
 import "./style.css";
 import video from "./videoplayback.mp4";
-import photo from './about-E-Deeksham.png'
+import photo from 'src/assets/images/home-photo.png'
 const Workshop = () => {
   return (
     <div>

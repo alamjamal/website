@@ -1,5 +1,5 @@
 import "./style.css";
-import image2 from "./images/home-photo.png";
+import image2 from "src/assets/images/home-photo.png";
 function Contact() {
   return (
     <div>

@@ -1,6 +1,6 @@
 import "./style.css";
 import dummyPhoto from "./images/dummy_profile.png";
-import headPhoto from "./images/home-photo.png";
+import headPhoto from "src/assets/images/home-photo.png";
 function Team() {
   return (
     <div>
@@ -18,7 +18,7 @@ function Team() {
         <div className="L1">
           <div className="l1-image">
             {/* <img src="./images/wahid sir-photo1.jpg" alt="dean sir"> */}
-            <img src={dummyPhoto} alt="dummy photo" />
+            <img src={dummyPhoto} alt="dummy" />
           </div>
         </div>
         <div className="paragraph-team">
@@ -138,7 +138,7 @@ function Team() {
         <div className="L2">
           <div className="l2-image">
             {/* <img src="./images/pardeep sir-photo.jpg" alt="pardeep sir"> */}
-            <img src={dummyPhoto} alt="dummy photo" />
+            <img src={dummyPhoto} alt="dummy" />
           </div>
         </div>
       </section>
@@ -156,7 +156,7 @@ function Team() {
                 <i className="fab fa-youtube" />
               </div>
               {/* <img src="./images/fareeha ma'am.jpg" alt="Fareeha Rasheed ma'am" srcset=""> */}
-              <img src={dummyPhoto} alt="dummy photo" />
+              <img src={dummyPhoto} alt="dummy" />
             </div>
             <div className="name">
               <h3>Dr. Fareeha Rasheed</h3>
@@ -174,7 +174,7 @@ function Team() {
                 <i className="fab fa-youtube" />
               </div>
               {/* <img src="./images/islam-sir1.jpg" alt="islam sir" srcset=""> */}
-              <img src={dummyPhoto} alt="dummy photo" />
+              <img src={dummyPhoto} alt="dummy" />
             </div>
             <div className="name">
               <h3>Mr. Mohammad Islam</h3>
@@ -192,7 +192,7 @@ function Team() {
                 <i className="fab fa-youtube" />
               </div>
               {/* <img src="./images/pasha quadri.jpg" alt="pasha sir" srcset=""> */}
-              <img src={dummyPhoto} alt="dummy photo" />
+              <img src={dummyPhoto} alt="dummy" />
             </div>
             <div className="name">
               <h3>Mr. Mohatesham Pasha Quadri</h3>
@@ -211,7 +211,7 @@ function Team() {
                 <i className="fab fa-youtube" />
               </div>
               {/* <img src="./images/alam jamal-photo.jpg" alt="Alam jamal"> */}
-              <img src={dummyPhoto} alt="dummy photo" />
+              <img src={dummyPhoto} alt="dummy" />
             </div>
             <div className="name">
               <h3>Mr. Alam Jamal</h3>
@@ -234,7 +234,7 @@ function Team() {
                 <i className="fab fa-twitter " />
                 <i className="fab fa-youtube" />
               </div>
-              <img src={dummyPhoto} alt="dummy photo" />
+              <img src={dummyPhoto} alt="dummy" />
               {/* <img src="./images/asifiya.png" alt="asfiya"> */}
             </div>
             <div className="name">
@@ -251,7 +251,7 @@ function Team() {
                 <i className="fab fa-twitter " />
                 <i className="fab fa-youtube" />
               </div>
-              <img src={dummyPhoto} alt="dummy photo" />
+              <img src={dummyPhoto} alt="dummy" />
               {/* <img src="./images/Yazdan-photo.jpg" alt="yazdan"> */}
             </div>
             <div className="name">
@@ -268,7 +268,7 @@ function Team() {
                 <i className="fab fa-twitter " />
                 <i className="fab fa-youtube" />
               </div>
-              <img src={dummyPhoto} alt="dummy photo" />
+              <img src={dummyPhoto} alt="dummy" />
               {/* <img src="./images/nahid-chaudhary.jpg" alt="Nahid Chaudhary"> */}
             </div>
             <div className="name">
@@ -285,7 +285,7 @@ function Team() {
                 <i className="fab fa-twitter " />
                 <i className="fab fa-youtube" />
               </div>
-              <img src={dummyPhoto} alt="dummy photo" />
+              <img src={dummyPhoto} alt="dummy" />
               {/* <img src="./images/muzzakir.jpg" alt="Syed Muzakkir Reza" srcset=""> */}
             </div>
             <div className="name">
@@ -302,7 +302,7 @@ function Team() {
                 <i className="fab fa-twitter " />
                 <i className="fab fa-youtube" />
               </div>
-              <img src={dummyPhoto} alt="dummy photo" />
+              <img src={dummyPhoto} alt="dummy" />
               {/* <img src="./images/akif-jawaid.jpeg" alt="Akif Jawaid"> */}
             </div>
             <div className="name">
@@ -319,7 +319,7 @@ function Team() {
                 <i className="fab fa-twitter " />
                 <i className="fab fa-youtube" />
               </div>
-              <img src={dummyPhoto} alt="dummy photo" />
+              <img src={dummyPhoto} alt="dummy" />
               {/* <img src="./images/ashad photo.jpg" alt="Ashad Jamal"> */}
             </div>
             <div className="name">
@@ -337,7 +337,7 @@ function Team() {
                 <i className="fab fa-youtube" />
               </div>
 
-              <img src={dummyPhoto} alt="dummy photo" />
+              <img src={dummyPhoto} alt="dummy" />
             </div>
             <div className="name">
               <h3>Hibbanur Rahman</h3>
@@ -354,7 +354,7 @@ function Team() {
                 <i className="fab fa-youtube" />
               </div>
               {/* <img src="./images/zahid-photo1.jpg" alt="Zahid"> */}
-              <img src={dummyPhoto} alt="dummy photo" />
+              <img src={dummyPhoto} alt="dummy" />
             </div>
             <div className="name">
               <h3>Zahid Rizwan</h3>
@@ -371,7 +371,7 @@ function Team() {
                 <i className="fab fa-youtube" />
               </div>
               {/* <img src="./images/aatif-nayeem-photo.jpg" alt=" AATIF NAYEEM" srcset=""> */}
-              <img src={dummyPhoto} alt="dummy photo" />
+              <img src={dummyPhoto} alt="dummy" />
             </div>
             <div className="name1-team">
               <h3> Aatif Nayeem</h3>

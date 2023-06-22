@@ -1,5 +1,5 @@
 import "./style.css";
-import homePhoto from "./images/home-photo.png";
+import homePhoto from "src/assets/images/home-photo.png";
 import boxImage from "./images/box-image.png";
 import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 

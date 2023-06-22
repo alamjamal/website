@@ -1,55 +1,45 @@
 import React, { useState } from "react";
 import "./style.css";
-import homePhoto from "./images/home-photo.png";
-import boxImage from "./images/box-image.png";
-import {
-  Box,
-  Card,
-  CardContent,
-  CardMedia,
-  Grid,
-  Tab,
-  Tabs,
-  Typography,
-} from "@mui/material";
+import homePhoto from "src/assets/images/home-photo.png";
+import { Box, Grid, Tab, Tabs } from "@mui/material";
 import School from "./School";
 import NGO from "./NGOs";
 import Professionals from "./Professionals";
 
 function Collaboration() {
-  const cardData = [
-    {
-      image: boxImage,
-      title: "School Name 1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      image: boxImage,
-      title: "School Name 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      image: boxImage,
-      title: "School Name 1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      image: boxImage,
-      title: "School Name 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      image: boxImage,
-      title: "School Name 1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      image: boxImage,
-      title: "School Name 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    // Add more card data objects as needed
-  ];
+  // const cardData = [
+  //   {
+  //     image: boxImage,
+  //     title: "School Name 1",
+  //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  //   },
+  //   {
+  //     image: boxImage,
+  //     title: "School Name 2",
+  //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  //   },
+  //   {
+  //     image: boxImage,
+  //     title: "School Name 1",
+  //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  //   },
+  //   {
+  //     image: boxImage,
+  //     title: "School Name 2",
+  //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  //   },
+  //   {
+  //     image: boxImage,
+  //     title: "School Name 1",
+  //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  //   },
+  //   {
+  //     image: boxImage,
+  //     title: "School Name 2",
+  //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  //   },
+  //   // Add more card data objects as needed
+  // ];
 
   const [value, setValue] = useState(0);
 
@@ -79,7 +69,7 @@ function Collaboration() {
           </h1>
         </Grid>
         <Grid item xs={12} sm={6} md={6} lg={6}>
-          <p style={{ padding: "20px" }}>
+          <p style={{ padding: "15px" }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim venia Lorem ipsum dolor sit amet, consectetur
@@ -93,7 +83,7 @@ function Collaboration() {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Box
           sx={{
-            width: "370px",
+            width: "330px",
             bgcolor: "white",
             border: "1px solid black",
             borderRadius: "15px",
@@ -110,7 +100,7 @@ function Collaboration() {
             <Tab
               label="Schools"
               sx={{
-                fontSize: "16px",
+                fontSize: "13px",
                 fontWeight: "500",
                 fontFamily: "Georgia, serif",
                 "&.Mui-selected": {
@@ -124,7 +114,7 @@ function Collaboration() {
             <Tab
               label="NGOs"
               sx={{
-                fontSize: "16px",
+                fontSize: "13px",
                 fontWeight: "500",
                 fontFamily: "Georgia, serif",
                 "&.Mui-selected": {
@@ -136,7 +126,7 @@ function Collaboration() {
             <Tab
               label="Professionals"
               sx={{
-                fontSize: "16px",
+                fontSize: "13px",
                 fontWeight: "500",
                 fontFamily: "Georgia, serif",
                 "&.Mui-selected": {

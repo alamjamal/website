@@ -1,5 +1,5 @@
 import "./style.css";
-import photo from "./home-photo.png";
+import photo from "src/assets/images/home-photo.png";
 import Gallery from "./Gallery";
 const PublicEvents = () => {
   return (

@@ -1,5 +1,5 @@
 import "./style.css";
-import homePhoto from "./images/home-photo.png";
+import homePhoto from "src/assets/images/home-photo.png";
 import articlePhoto from "./images/article-photo.png";
 import ministryPhoto from "./images/ministry-logo1.png";
 import ministryTweets from "./images/ministry-tweets.png";
@@ -9,7 +9,7 @@ function Insight() {
       {/* ======================================================= Home photo section start ====================================================== */}
       <div className="home-photo">
         <h1>INSIGHTS</h1>
-        <img src={homePhoto} alt="insight-home-photo" />
+        <img src={homePhoto} alt="insight-home" />
       </div>
       {/* ======================================================= Home photo section End ====================================================== */}
       {/* ======================================================= Pargraph-Section Start ====================================================== */}
@@ -41,7 +41,7 @@ function Insight() {
         <div className="col1">
           <div className="first-box">
             <div>
-              <img src={articlePhoto} alt="article-photo solar" />
+              <img src={articlePhoto} alt="article-solar" />
             </div>
             <div>
               <p>News</p>
@@ -68,7 +68,7 @@ function Insight() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor Lorem ipsum{" "}
               </p>
-              <img src={ministryTweets} alt />
+              <img src={ministryTweets} alt='insight' />
             </div>
           </div>
           <div className="third-box">
@@ -97,12 +97,12 @@ function Insight() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor Lorem ipsum{" "}
               </p>
-              <img src={ministryTweets} alt />
+              <img src={ministryTweets} alt='insight' />
             </div>
           </div>
           <div className="first-box">
             <div>
-              <img src={articlePhoto} alt="article-photo solar" />
+              <img src={articlePhoto} alt="article-solar" />
             </div>
             <div>
               <p>News</p>
@@ -151,12 +151,12 @@ function Insight() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor Lorem ipsum{" "}
               </p>
-              <img src={ministryTweets} alt />
+              <img src={ministryTweets} alt="insight" />
             </div>
           </div>
           <div className="first-box">
             <div>
-              <img src={articlePhoto} alt="article-photo solar" />
+              <img src={articlePhoto} alt="article-solar" />
             </div>
             <div>
               <p>News</p>
